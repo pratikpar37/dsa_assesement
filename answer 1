@@ -48,7 +48,6 @@ int printkdistanceNode(node* root, node* target , int k)
          return 1 + dl; 
     } 
   
-   
     int dr = printkdistanceNode(root->right, target, k); 
     if (dr != -1) 
     { 
@@ -59,11 +58,9 @@ int printkdistanceNode(node* root, node* target , int k)
          return 1 + dr; 
     } 
   
-   
-    return -1; 
+   return -1; 
 } 
   
- 
 node *newnode(int data) 
 { 
     node *temp = new node; 
@@ -72,7 +69,6 @@ node *newnode(int data)
     return temp; 
 } 
   
- 
 int main() 
 { 
     
